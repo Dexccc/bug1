@@ -1,25 +1,3 @@
-//════════════════════════════//
-//If you want to recode, reupload
-//or copy the codes/script,
-//pls give credit
-//no credit? i will take action immediately
-//© 2022 Xeon Bot Inc. Cheems Bot MD
-//Thank you to Lord Buddha, Family and Myself
-//════════════════════════════//
-//recode kar ke youtube pe upload kar rhe hai ya
-//codes copy kar ke apne script me dal rhe
-//hai to, description me xeon ka yt channel
-// ka link paste kr dena as a cradit or github 
-//repo me bhi tag kardena baki jo
-//bhi karna hai apki marzi, thank you!🦄
-//════════════════════════════//
-//If you recode and uploading on your channel
-//or copy pasting the codes in ur script, 
-//i give permission to do as long as you
-//put Xeons youtube channel link in the video
-//description and tag me on githuh repo, 
-//thank you🦄
-//════════════════════════════//
 
 require('./settings')
 const { default: XeonBotIncConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
@@ -172,22 +150,34 @@ XeonLft = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeUR
                 const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
 	            const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
 	            const xmembers = metadata.participants.length
-                let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: XeonWlcm, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                xeonbody = `┌─❖
-│「 𝗛𝗶 👋 」
-└┬❖ 「 @${xeonName.split("@")[0]}  」
-   │✑  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
-   │✑  ${metadata.subject}
-   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
-   │✑ ${xmembers}th
-   │✑  𝗝𝗼𝗶𝗻𝗲𝗱 : 
-   │✑ ${xtime} ${xdate}
-   └───────────────┈ ⳹`
+                let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 500000,status: 200, thumbnail: XeonWlcm, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, "contextInfo": {
+'externalAdReply': {
+'showAdAttribution': true,
+}
+}
+                xeonbody = `
+╭─❒ ⏤͟͟͞͞ᗯᗴᒪᑕOᗰᗴ
+│
+└┬❖ │
+│
+│き👋@${xeonName.split("@")[0]}
+│
+│きGʀᴏᴜᴘ: ${metadata.subject}
+│
+│きMᴇᴍʙᴇʀ: ${xmembers}
+│
+│きWᴀᴋᴛᴜ: ${xtime} ${xdate}
+│
+│❖Sᴇᴍᴏɢᴀ ʙᴇᴛᴀʜ ʏᴀ ᴋᴀᴋ
+│Dᴀɴ ᴊᴀɴɢᴀɴ ʟᴜᴘᴀ sᴜʙsᴄʀɪʙᴇ ʏᴏᴜᴛᴜʙᴇ ʏᴀ
+│「ₛᵤBₛCᵣᵢBₑ」
+│https://youtube.com/channel/UCfhWUHl7dskRCVlyDMxnQbw
+└─────────────────❒`
       //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
 let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: 'Welcome 💐'}, type: 1}
+{buttonId: `wkwwk`, buttonText: {displayText: '💫🇼 🇪 🇱 🇨 🇴 🇲 🇪 ✨'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
@@ -202,7 +192,7 @@ buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title: `${ownername}`,
-body: `Don't forget to read group description`,
+body: `Jangan lupa baca deskripsi grup`,
 mediaType:2,
 thumbnail: XeonWlcm,
 sourceUrl: `${websitex}`,
@@ -216,22 +206,33 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
 	                const xeondate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 	let xeonName = num
                     const xeonmembers = metadata.participants.length
-                    let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: xeonbuffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                    xeonbody = `┌─❖
-│「 𝗚𝗼𝗼𝗱𝗯𝘆𝗲 👋 」
-└┬❖ 「 @${xeonName.split("@")[0]}  」
-   │✑  𝗟𝗲𝗳𝘁 
-   │✑ ${metadata.subject}
-   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
-   │✑ ${xeonmembers}th
-   │✑  𝗧𝗶𝗺𝗲 : 
-   │✑  ${xeontime} ${xeondate}
-   └───────────────┈ ⳹`
+                    let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 500000,status: 200, thumbnail: xeonbuffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, "contextInfo": {
+'externalAdReply': {
+'showAdAttribution': true,
+}
+}
+                    xeonbody = `╭─❒ ⏤͟͟͞͞ᗷᗩY ᗷᗴᗷᗩᑎ
+│
+└┬❖ │
+│
+│き👋@${xeonName.split("@")[0]}
+│
+│きGʀᴏᴜᴘ: ${metadata.subject}
+│
+│きMᴇᴍʙᴇʀ: ${xmembers}
+│
+│きWᴀᴋᴛᴜ: ${xtime} ${xdate}
+│
+│❖Sᴇᴍᴏɢᴀ ʙᴇᴛᴀʜ ʏᴀ ᴋᴀᴋ
+│Dᴀɴ ᴊᴀɴɢᴀɴ ʟᴜᴘᴀ sᴜʙsᴄʀɪʙᴇ ʏᴏᴜᴛᴜʙᴇ ʏᴀ
+│「ₛᵤBₛCᵣᵢBₑ」
+│https://youtube.com/channel/UCfhWUHl7dskRCVlyDMxnQbw
+└─────────────────❒`
       //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
 let buttons = [
-{buttonId: `wkwkwk`, buttonText: {displayText: 'Sayonara 🥀'}, type: 1}
+{buttonId: `wkwkwk`, buttonText: {displayText: '🥀🇧 🇦 🇾 🥀'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
@@ -246,7 +247,7 @@ buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title: `${ownername}`,
-body: `Bye! my friend, take care.`,
+body: `Selamat tinggal! temanku, berhati-hatilah.`,
 mediaType:2,
 thumbnail: XeonLft,
 sourceUrl: `${websitex}`,
