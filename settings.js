@@ -54,7 +54,7 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.vcardowner = ['916909137213'] //ur owner number
+global.vcardowner = ['6285706035039'] //ur owner number
 global.ownername = "HANZ々OFC彡 [BOTZ]" //ur owner name
 global.ytname = "YT: HANZ々OFC彡" //ur yt chanel name
 global.socialm = "GitHub: HARISGANZ" //ur github or insta name
@@ -69,17 +69,17 @@ global.websitex = "https://youtu.be/gW2lo5w22C8" //ur website to be displayed
 global.botscript = 'https://github.com/HARISGANZ' //script link
 global.reactmoji = "🤔" //ur menu react emoji
 global.themeemoji = "😎" //ur theme emoji
-global.packname = "HANZ々OFC彡[BOTZ🎭]\n\n\n\n\n\n\n\n\n\n\nSubscribe " //ur sticker watermark packname
+global.packname = "HANZ々OFC彡[BOTZ🎭]\n\n\n\n\n\n\n\n\n\n\n\nSubscribe " //ur sticker watermark packname
 global.author = "Botzᴍᴅ" //ur sticker watermark author
 
 //Bot theme media
-global.thum = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
+global.thum = fs.readFileSync("./XeonMedia/theme/hanz1.jpg") //ur thumb pic
 global.log0 = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur logo pic
-global.err4r = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur error pic
-global.thumb = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
+global.err4r = fs.readFileSync("./XeonMedia/theme/hanz2.jpg") //ur error pic
+global.thumb = fs.readFileSync("./XeonMedia/theme/hanz3.jpg") //ur thumb pic
 
 //damtabase
-global.premium = ['916909137213'] //ur premium numbers
+global.premium = ['6285706035039'] //ur premium numbers
 global.ntilinkytvid = []
 global.ntilinkytch = []
 global.ntilinkig = []
