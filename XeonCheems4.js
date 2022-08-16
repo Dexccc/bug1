@@ -11061,7 +11061,7 @@ participant: `0@s.whatsapp.net`,
 "isAnimated": true,
 }
 }
-}})
+}}
 }
 m.reply(`Sukses Send Sebanyak ${jumlah}`)
 }
